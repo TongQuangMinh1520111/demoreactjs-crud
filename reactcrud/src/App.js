@@ -1,4 +1,4 @@
-// import React, { useEffect, useContext } from "react";
+
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Register from "./components/register.component";
@@ -14,19 +14,6 @@ const App = () => {
     <>
       <Header />
       <div className="container">
-        {/* {renderPage && (
-          <Routes>
-            <Route path="/register" element={<Register />} />
-            <Route path="/login" element={<Login />} />
-            <Route element={<ProtectedRoutes />}>
-              <Route path="/home" element={<Home />} />
-              <Route
-                path="/products/:slug"
-                element={<ProductDetail />}
-              ></Route>
-            </Route>
-          </Routes>
-        )} */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<ListProduct />}></Route>
